@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as m;
+
+.list {
+  @include m.flex(column, flex-start);
+  gap: var(--size-xs);
+  margin-block-end: var(--size-sm);
+
+  &__item {
+    list-style: none;
+    padding-inline-start: 10%;
+
+    &--custom {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: url("../../assets/images/icon-success.svg");
+        top: 0;
+        left: 0;
+        height: clamp(1em, calc(1em + 0.2vw), 1.2em);
+        width: auto;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+}

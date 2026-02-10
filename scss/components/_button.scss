@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as m;
+
+.button {
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 500ms ease;
+  border: none;
+
+  &:hover {
+    transition: 200ms ease;
+  }
+
+  &--rectangle {
+    padding: calc(var(--size-xs) + 0.3rem) calc(var(--size-sm) - 0.3rem);
+    border-radius: 0.3rem;
+
+    @media screen and (min-width: 65rem) {
+      padding: var(--size-xs) calc(var(--size-sm) - 0.5rem);
+    }
+  }
+
+  &--neutral {
+    background: var(--color-neutral-3);
+    color: var(--color-neutral-0);
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--custom-hover {
+    // To Be Added
+  }
+}

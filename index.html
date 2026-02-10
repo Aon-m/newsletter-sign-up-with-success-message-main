@@ -25,47 +25,57 @@
       <section id="contact" class="newsletter container">
         <div class="container__text-content">
           <h1 class="sr-hidden">Monthly newsletter</h1>
-          <h2 class="text text__title text--large">Stay updated!</h2>
-          <p class="text text__description text--small">
+          <h2 class="text text--bold text--large">Stay updated!</h2>
+          <p class="text text__description text--small text--regular">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
 
           <ul class="list">
-            <li class="list__item list__item--custom text text--small">
+            <li
+              class="list__item list__item--custom text text--regular text--small"
+            >
               Product discovery and building what matters
             </li>
-            <li class="list__item list__item--custom text text--small">
+            <li
+              class="list__item list__item--custom text text--regular text--small"
+            >
               Measuring to ensure updates are a success
             </li>
-            <li class="list__item list__item--custom text text--small">
+            <li
+              class="list__item list__item--custom text text--regular text--small"
+            >
               And much more!
             </li>
           </ul>
 
           <form class="newsletter__form">
-            <div class="newsletter__input-wrapper">
-              <label for="email" class="text text--small">Email address</label>
-              <span class="text text--small sr-hidden" id="error-message">Valid email required</span>
-              <input
-                id="email"
-                class="newsletter__input"
-                placeholder="email@company.com"
-                type="email"
-                aria-describedby="error-message"
-                required
-              />
+            <div class="newsletter__labels">
+              <label for="email" class="newsletter__label text text--bold"
+                >Email address</label
+              >
+              <span class="text text--small hidden" id="error-message"
+                >Valid email required</span
+              >
             </div>
+            <input
+              id="email"
+              class="newsletter__input"
+              placeholder="email@company.com"
+              type="email"
+              aria-describedby="error-message"
+              required
+            />
 
             <button
               type="submit"
-              class="button button--rectangle button--secondary"
+              class="button button--neutral button--wide button--custom-hover button--rectangle"
             >
               Subscribe to monthly newsletter
             </button>
           </form>
         </div>
-        <div class="container__image">
-          <picture class="picture picture--small rotate">
+        <div class="container__image order-mobile-first order-desktop-last">
+          <picture class="picture picture--large">
             <source
               class="picture__source"
               srcset="./assets/images/illustration-sign-up-desktop.svg"
@@ -113,7 +123,7 @@
         </g>
       </svg>
 
-      <p class="text text--larger"  id="success-title">Thanks for subscribing!</p>
+      <p class="text text--large" id="success-title">Thanks for subscribing!</p>
 
       <p class="text">
         A confirmation email has been sent to ash@loremcompany.com. Please open
@@ -121,7 +131,7 @@
       </p>
 
       <button
-        class="button button--rectangle button--primary"
+        class="button button--neutral button--wide button--custom-hover"
         id="close-dialog-btn"
       >
         Dismiss message

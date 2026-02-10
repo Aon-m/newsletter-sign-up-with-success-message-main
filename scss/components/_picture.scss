@@ -1,0 +1,24 @@
+.picture {
+  &--large {
+    width: 100%;
+
+    @media screen and (min-width: 60rem) {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+
+    @media screen and (min-width: 60rem) {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__source {
+    display: block;
+  }
+}

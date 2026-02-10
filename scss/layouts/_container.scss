@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as m;
+
+.container {
+  @include m.flex(column, center);
+
+  &__image {
+    @include m.flex(column);
+    height: auto;
+    width: 100%;
+  }
+
+  &__text-content {
+    @include m.flex(column, flex-start);
+    gap: calc(var(--size-sm) - 0.5rem);
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    flex-direction: row;
+
+    &__image {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
