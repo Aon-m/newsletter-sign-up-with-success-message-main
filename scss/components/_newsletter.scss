@@ -34,3 +34,9 @@
     }
   }
 }
+
+@media screen and (min-width: 40rem) {
+  .newsletter {
+    padding-block-start: var(--size-md);
+  }
+}
