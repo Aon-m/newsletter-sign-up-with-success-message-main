@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- File links -->
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <section id="contact" class="newsletter container">
+        <div class="container__text-content">
+          <h1 class="sr-hidden">Monthly newsletter</h1>
+          <h2 class="text text__title text--large">Stay updated!</h2>
+          <p class="text text__description text--small">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="list">
+            <li class="list__item list__item--custom text text--small">
+              Product discovery and building what matters
+            </li>
+            <li class="list__item list__item--custom text text--small">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="list__item list__item--custom text text--small">
+              And much more!
+            </li>
+          </ul>
+
+          <form class="newsletter__form">
+            <div class="newsletter__input-wrapper">
+              <label for="email" class="text text--small">Email address</label>
+              <span class="text text--small sr-hidden" id="error-message">Valid email required</span>
+              <input
+                id="email"
+                class="newsletter__input"
+                placeholder="email@company.com"
+                type="email"
+                aria-describedby="error-message"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="button button--rectangle button--secondary"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <div class="container__image">
+          <picture class="picture picture--small rotate">
+            <source
+              class="picture__source"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+              id="img-desktop"
+              media="(min-width: 60rem)"
+            />
+            <source
+              class="picture__source"
+              srcset="./assets/images/illustration-sign-up-tablet.svg"
+              id="img-tablet"
+              media="(min-width: 40rem)"
+            />
+            <img
+              class="picture__img"
+              src="./assets/images/illustration-sign-up-mobile.svg"
+              alt=""
+              id="img-mobile"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="dialog" id="success-dialog" aria-labelledby="success-title">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 64 64"
+        class="icon icon--large"
+      >
+        <defs>
+          <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF6A3A" />
+            <stop offset="100%" stop-color="#FF527B" />
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <circle cx="32" cy="32" r="32" fill="url(#a)" />
+          <path
+            stroke="#FFF"
+            stroke-width="4"
+            d="m18.286 34.686 8.334 7.98 19.094-18.285"
+          />
+        </g>
+      </svg>
+
+      <p class="text text--larger"  id="success-title">Thanks for subscribing!</p>
+
+      <p class="text">
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+
+      <button
+        class="button button--rectangle button--primary"
+        id="close-dialog-btn"
+      >
+        Dismiss message
+      </button>
+    </dialog>
+
+    <footer>
+      <div class="attribution">
+        <p class="attribution__text">
+          Challenge by
+          <a
+            class="attribution__link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a class="attribution__link" href="https://github.com/Aon-m">Aon</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
