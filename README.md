@@ -14,6 +14,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [AI Collaboration](#ai-collaboration)
+      - [What tools did I use?](#what-tools-did-i-use)
+      - [How did I use them?](#how-did-i-use-them)
   - [Author](#author)
 
 ## Overview
@@ -33,7 +35,7 @@ Users should be able to:
 ### Screenshot
 
 <div
-  style="display: flex; gap: 1rem; align-items: flex-start; width: clamp(600px, 90%, 1000px); height: 2000px; padding-bottom: 2rem;"
+  style="display: flex; gap: 1rem; align-items: flex-start; width: clamp(600px, 90%, 1000px); height: 500px; padding-bottom: 2rem;"
 >
   <figure style="margin: 0; height: 100%; text-align: center; width: 40%;">
     <figcaption>Mobile preview</figcaption>
@@ -61,7 +63,7 @@ Users should be able to:
         style="width: 90%;"
       />
     </figure>
-      <figure style="margin: 0; width: 100%; text-align: center;">
+      <figure style="margin: 0; width: 90%; text-align: center; margin-inline: auto">
       <figcaption>Success preview</figcaption>
       <img
         src="previews/success-preview.jpeg"
@@ -71,7 +73,6 @@ Users should be able to:
     </figure>
   </div>
 </div>
-
 
 ### Links
 
@@ -91,11 +92,28 @@ Users should be able to:
 
 ### What I learned
 
-<!-- To Be Added -->
+I learnt:
+
+- How to create a FormData object:
+
+```js
+const formData = new FormData(form);
+```
+
+- How to access and modify form values using `.has()` `.append()` `.delete()` `.entries()`
 
 ### AI Collaboration
 
-<!-- To Be Added -->
+#### What tools did I use?
+
+I used ChatGPT as my primary AI assistant
+
+#### How did I use them?
+
+- Debugging
+- SEO, Accessibility, and Best Practices.
+- Workflow Advice
+- Code syntax
 
 ## Author
 
