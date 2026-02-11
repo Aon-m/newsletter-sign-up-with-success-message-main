@@ -1,5 +1,4 @@
 const closeDialogBtn = document.querySelector("#close-dialog-btn");
-const submitBtn = document.querySelector("#submit-btn");
 const successDialog = document.querySelector("#success-dialog");
 const form = document.querySelector("#form");
 const errorMessage = document.querySelector("#error-message");
@@ -21,7 +20,7 @@ closeDialogBtn.addEventListener("click", () => {
 });
 
 function emailValidation(element) {
-  let email = element.get("email");
+  const email = element.get("email");
 
   switch (true) {
     case email.trim() === "":
