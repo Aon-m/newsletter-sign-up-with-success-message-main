@@ -10,6 +10,7 @@
   position: fixed;
   overflow: hidden;
   border-radius: var(--size-sm);
+  z-index: 99;
 
   &__content {
     @include m.flex(column, flex-start);

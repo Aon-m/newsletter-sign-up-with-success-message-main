@@ -22,6 +22,11 @@
 
     &:hover {
       color: var(--color-neutral-2);
+
+      @media screen and (min-width: 60rem) {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
     }
   }
 }
