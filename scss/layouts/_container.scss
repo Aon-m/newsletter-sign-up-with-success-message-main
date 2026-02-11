@@ -2,6 +2,9 @@
 
 .container {
   @include m.flex(column, center);
+  gap: var(--size-lg);
+  width: 100%;
+  margin-block: 0 var(--size-md);
 
   &__image {
     @include m.flex(column);
@@ -12,16 +15,43 @@
   &__text-content {
     @include m.flex(column, flex-start);
     gap: calc(var(--size-sm) - 0.5rem);
+    width: min(90vw, 25rem);
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    margin-block: var(--size-md) 0;
   }
 }
 
 @media screen and (min-width: 60rem) {
   .container {
     flex-direction: row;
+    padding: calc(var(--size-sm) - 0.5rem);
+    border-radius: var(--size-sm);
+    gap: 0;
+    margin-block: 0;
+    box-shadow: 0 1rem 1rem var(--color-neutral-3);
 
     &__image {
       height: 100%;
       width: auto;
+    }
+
+    &__text-content {
+      height: 100%;
+      width: clamp(23rem, calc(20rem + 5vw), 40rem);
+      margin-inline: var(--size-sm) var(--size-md);
+    }
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  .container {
+    &__text-content {
+      width: clamp(30rem, calc(30rem + 5vw), 50rem);
+      gap: 1vw;
     }
   }
 }

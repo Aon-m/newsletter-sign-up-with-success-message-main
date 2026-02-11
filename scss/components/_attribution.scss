@@ -2,9 +2,19 @@
   width: 100%;
   text-align: center;
   padding-block-end: var(--size-sm);
+  margin-block-start: var(--size-md);
+
+  @media screen and (min-width: 60rem) {
+    color: var(--color-neutral-0);
+    margin-block-start: 0;
+  }
 
   &__text {
     color: var(--color-neutral-3);
+
+    @media screen and (min-width: 60rem) {
+      color: var(--color-neutral-0);
+    }
   }
   &__link {
     text-decoration: none;

@@ -17,3 +17,14 @@
 
 // Layout
 @use "./layouts/container";
+
+@media screen and (min-width: 60rem) {
+  body {
+    background: var(--color-neutral-2);
+    @include m.flex(column);
+  }
+
+  main {
+    margin-block: auto;
+  }
+}

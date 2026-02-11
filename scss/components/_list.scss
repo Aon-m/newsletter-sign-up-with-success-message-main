@@ -4,10 +4,11 @@
   @include m.flex(column, flex-start);
   gap: var(--size-xs);
   margin-block-end: var(--size-sm);
+  width: min(100%, 50ch);
 
   &__item {
     list-style: none;
-    padding-inline-start: 10%;
+    padding-inline-start: 8%;
 
     &--custom {
       position: relative;
@@ -22,5 +23,11 @@
         aspect-ratio: 1 / 1;
       }
     }
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .list {
+    margin-block-end: 0;
   }
 }

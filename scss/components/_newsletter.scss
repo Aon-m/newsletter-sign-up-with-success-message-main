@@ -1,20 +1,17 @@
 @use "../abstracts/mixins" as m;
 
 .newsletter {
-  gap: var(--size-lg);
-  width: 100%;
   background: var(--color-neutral-0);
-  padding-block-end: var(--size-md);
 
   &__form {
     @include m.flex(column);
-    gap: calc(var(--size-xs) + 0.5rem);
     width: 100%;
+    gap: var(--size-xs);
   }
 
   &__labels {
-    width: 100%;
     @include m.flex(row, space-between);
+    width: 100%;
     font-size: calc(var(--fs-sm) - 0.2rem);
   }
 
@@ -28,15 +25,10 @@
     border-radius: 0.3rem;
     border: 0.1rem solid var(--color-neutral-1);
     width: 100%;
+    margin-block-end: 0.5rem;
 
     &::placeholder {
       color: var(--color-neutral-1);
     }
-  }
-}
-
-@media screen and (min-width: 40rem) {
-  .newsletter {
-    padding-block-start: var(--size-md);
   }
 }
