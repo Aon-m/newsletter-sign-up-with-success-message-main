@@ -30,8 +30,8 @@
 @media screen and (min-width: 40rem) {
   .dialog {
     transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
 
     &__content {
       padding-block-start: 0;
