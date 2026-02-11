@@ -15,7 +15,7 @@
 
       &::before {
         position: absolute;
-        content: url("../../assets/images/icon-success.svg");
+        content: url("../assets/images/icon-success.svg");
         top: 0;
         left: 0;
         height: clamp(1em, calc(1em + 0.2vw), 1.2em);
