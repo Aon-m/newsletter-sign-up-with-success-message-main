@@ -9,11 +9,13 @@
 // Components
 @use "./components/attribution";
 @use "./components/button";
+@use "./components/dialog";
 @use "./components/icon";
 @use "./components/list";
 @use "./components/newsletter";
 @use "./components/picture";
 @use "./components/text";
+@use "./components/error";
 
 // Layout
 @use "./layouts/container";
