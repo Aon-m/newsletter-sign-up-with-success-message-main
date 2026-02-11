@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Frontend Mentor Newsletter sign-up form with success message solution"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -56,6 +60,7 @@
               <span
                 class="text text--bold error__message hidden"
                 id="error-message"
+                role="alert"
                 >Valid email required</span
               >
             </div>
@@ -97,7 +102,7 @@
             <img
               class="picture__img"
               src="./assets/images/illustration-sign-up-mobile.svg"
-              alt=""
+              alt="illustration of newsletter analytics"
               id="img-mobile"
             />
           </picture>
@@ -105,7 +110,12 @@
       </section>
     </main>
 
-    <dialog class="dialog" id="success-dialog" aria-labelledby="success-title">
+    <dialog
+      class="dialog"
+      id="success-dialog"
+      aria-labelledby="success-title"
+      aria-modal="true"
+    >
       <div class="dialog__content">
         <svg
           xmlns="http://www.w3.org/2000/svg"
