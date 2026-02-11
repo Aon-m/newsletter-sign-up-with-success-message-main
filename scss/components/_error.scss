@@ -9,13 +9,14 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: -1;
     background: var(--color-primary);
     opacity: 0.15;
   }
 
   &__input {
     border: 0.1rem solid var(--color-primary);
+    background: transparent;
     z-index: 1;
 
     &::placeholder {

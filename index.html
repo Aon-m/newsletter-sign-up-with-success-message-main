@@ -48,7 +48,7 @@
             </li>
           </ul>
 
-          <form class="newsletter__form">
+          <form class="newsletter__form" id="form">
             <div class="newsletter__labels">
               <label for="email" class="newsletter__label text text--bold"
                 >Email address</label
@@ -59,20 +59,22 @@
                 >Valid email required</span
               >
             </div>
-            <div class="newsletter__input-wrapper">
+            <div class="newsletter__input-wrapper" id="error-background">
               <input
                 id="email"
+                name="email"
+                autocomplete="email"
                 class="newsletter__input"
                 placeholder="email@company.com"
                 type="email"
                 aria-describedby="error-message"
-                required
               />
             </div>
 
             <button
               type="submit"
               class="button button--neutral button--wide button--custom-hover button--custom-hover--sub button--rectangle"
+              id="submit-btn"
             >
               Subscribe to monthly newsletter
             </button>
@@ -103,11 +105,7 @@
       </section>
     </main>
 
-    <dialog
-      class="dialog"
-      id="success-dialog"
-      aria-labelledby="success-title"
-    >
+    <dialog class="dialog" id="success-dialog" aria-labelledby="success-title">
       <div class="dialog__content">
         <svg
           xmlns="http://www.w3.org/2000/svg"

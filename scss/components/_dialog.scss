@@ -34,7 +34,7 @@
     height: fit-content;
 
     &__content {
-      padding-block-start: 0;
+      padding-block-start: var(--size-sm);
       max-width: 45ch;
     }
   }
